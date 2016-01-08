@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubCommentController">
+            <connections>
+                <outlet property="_lbCount" destination="9CT-ks-Jcx" id="rDP-uw-3Io"/>
+                <outlet property="_textView" destination="dS5-Nh-d3e" id="5ar-NK-u6t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedback_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gG2-L3-9dk">
+                    <rect key="frame" x="5" y="7" width="310" height="146"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="146" id="9l5-1X-69l"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dS5-Nh-d3e">
+                    <rect key="frame" x="7" y="9" width="306" height="142"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="142" id="gOB-JA-1sD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="rqa-WW-zQW"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0/100" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9CT-ks-Jcx">
+                    <rect key="frame" x="137" y="161" width="175" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="CHb-Xf-P8H"/>
+                        <constraint firstAttribute="height" constant="21" id="g5T-Tp-r9c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gG2-L3-9dk" secondAttribute="trailing" constant="5" id="E3h-DG-LLC"/>
+                <constraint firstItem="9CT-ks-Jcx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="161" id="Ecq-mz-bJ7"/>
+                <constraint firstItem="dS5-Nh-d3e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="7" id="LH0-jq-h32"/>
+                <constraint firstAttribute="trailing" secondItem="dS5-Nh-d3e" secondAttribute="trailing" constant="7" id="PzK-VI-M9H"/>
+                <constraint firstItem="dS5-Nh-d3e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="9" id="ZHj-eZ-vtv"/>
+                <constraint firstItem="gG2-L3-9dk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="7" id="mnz-xs-bJK"/>
+                <constraint firstItem="gG2-L3-9dk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="skX-GC-Lto"/>
+                <constraint firstAttribute="trailing" secondItem="9CT-ks-Jcx" secondAttribute="trailing" constant="8" id="zy2-As-0ZM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="582" y="319"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="feedback_bg.png" width="100" height="100"/>
+    </resources>
+</document>

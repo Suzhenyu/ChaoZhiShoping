@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationController">
+            <connections>
+                <outlet property="_lbGoodsName" destination="VAT-Ap-2j2" id="J8r-f8-ZRk"/>
+                <outlet property="_lbImgsPage" destination="bxH-4P-UZj" id="fzp-Wa-y0I"/>
+                <outlet property="_lbPrice" destination="ihR-NM-Rvx" id="GNp-PY-CpK"/>
+                <outlet property="headView" destination="Zys-FF-953" id="N7S-e6-c1H"/>
+                <outlet property="imgGoodsAnima" destination="Mgg-KJ-vh5" id="3u9-hd-fBc"/>
+                <outlet property="informationTable" destination="GuX-qw-Gqp" id="fhC-fO-dng"/>
+                <outlet property="lbCommentCounts" destination="62n-yu-yve" id="Mlp-c3-J7E"/>
+                <outlet property="scrollImgs" destination="IQW-wk-m1q" id="bPY-Fi-E1V"/>
+                <outlet property="tableBottomView" destination="zLh-J9-mAZ" id="cX0-1K-uQp"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="viewCommentsCount" destination="BQD-50-tfF" id="4zd-aW-KnS"/>
+                <outlet property="viewGoodsInfo" destination="Ini-aP-fU0" id="MjM-yT-Dn3"/>
+                <outlet property="viewRecommend" destination="Ohx-wC-ExB" id="rh3-U6-cB8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GuX-qw-Gqp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="408"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.96862751245498657" green="0.96862751245498657" blue="0.96862751245498657" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4Gr-js-MS9"/>
+                        <outlet property="delegate" destination="-1" id="VtR-KZ-enz"/>
+                    </connections>
+                </tableView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Mgg-KJ-vh5">
+                    <rect key="frame" x="0.0" y="350" width="55" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="zLh-J9-mAZ">
+                    <rect key="frame" x="0.0" y="407" width="320" height="53"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="information_line.png" id="vov-EL-PVD">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5A2-S7-tsF">
+                            <rect key="frame" x="11" y="13" width="298" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="加入购物车" backgroundImage="login_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addCarAction:" destination="-1" eventType="touchUpInside" id="n29-72-avh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="Zys-FF-953">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="615"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="IQW-wk-m1q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="dQj-af-2OH"/>
+                    </connections>
+                </scrollView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bxH-4P-UZj">
+                    <rect key="frame" x="269" y="9" width="47" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.69803923368453979" green="0.69803923368453979" blue="0.69803923368453979" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="Ini-aP-fU0">
+                    <rect key="frame" x="7" y="263" width="306" height="95"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="TrF-9b-AG1">
+                            <rect key="frame" x="0.0" y="0.0" width="306" height="95"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="information_box2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goDetailAction:" destination="-1" eventType="touchUpInside" id="PI9-uX-As8"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imformation_arrow_right.png" id="AxA-g3-D8f">
+                            <rect key="frame" x="283" y="73" width="6" height="10"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_solid.png" id="a7v-4U-aRv">
+                            <rect key="frame" x="6" y="61" width="290" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方正品小米路由器mini 主流2x2双频AC天线智能路由器家居路由器AC天线智能路由器家居路由器AC天线智能路由器家居路由器" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAT-Ap-2j2">
+                            <rect key="frame" x="10" y="6" width="286" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥425" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ihR-NM-Rvx">
+                            <rect key="frame" x="12" y="67" width="122" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.91372555494308472" green="0.19215688109397888" blue="0.22745099663734436" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="BQD-50-tfF">
+                    <rect key="frame" x="7" y="371" width="306" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Llx-Q7-png">
+                            <rect key="frame" x="0.0" y="0.0" width="306" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="information_box3.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="commentListAction:" destination="-1" eventType="touchUpInside" id="i6J-HN-jgJ"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imformation_arrow_right.png" id="59J-gd-syR">
+                            <rect key="frame" x="283" y="12" width="6" height="10"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已有0人评价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62n-yu-yve">
+                            <rect key="frame" x="12" y="6" width="231" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.91372555489999996" green="0.19215688110000001" blue="0.22745099660000001" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="Ohx-wC-ExB">
+                    <rect key="frame" x="7" y="416" width="306" height="186"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="information_box2.png" id="XGd-TQ-trd">
+                            <rect key="frame" x="0.0" y="0.0" width="306" height="186"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可能还喜欢" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="svM-D5-gCG">
+                            <rect key="frame" x="12" y="9" width="133" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.45098042490000001" green="0.45098042490000001" blue="0.45098042490000001" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862751245498657" green="0.96862751245498657" blue="0.96862751245498657" alpha="1" colorSpace="deviceRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="653" y="200.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imformation_arrow_right.png" width="12" height="20"/>
+        <image name="information_box2.png" width="612" height="190"/>
+        <image name="information_box3.png" width="612" height="66"/>
+        <image name="information_line.png" width="640" height="10"/>
+        <image name="line_solid.png" width="640" height="2"/>
+        <image name="login_btn.png" width="612" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
