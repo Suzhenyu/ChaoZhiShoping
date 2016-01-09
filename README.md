@@ -1,2 +1,2 @@
 # SQLite-
- ![image](https://github.com/Suzhenyu/SQLite-.git/shopping.gif)
+ ![image](https://github.com/Suzhenyu/SQLite-.git/raw/master/shopping.gif)
