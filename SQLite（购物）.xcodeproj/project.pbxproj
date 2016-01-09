@@ -13,6 +13,7 @@
 		47EA44A61BE056DC00742CB9 /* XPhotoBrowserBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EA44A01BE056DC00742CB9 /* XPhotoBrowserBar.m */; };
 		47EA44A71BE056DC00742CB9 /* XPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EA44A21BE056DC00742CB9 /* XPhotoBrowserViewController.m */; };
 		47EA44A81BE056DC00742CB9 /* XPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EA44A41BE056DC00742CB9 /* XPhotoView.m */; };
+		8B0144DC1C40A61B00154559 /* shopping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B0144DB1C40A61B00154559 /* shopping.gif */; settings = {ASSET_TAGS = (); }; };
 		D4420C4E1B8DE87200CB1B88 /* DBAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4420C4D1B8DE87200CB1B88 /* DBAddress.m */; };
 		D4420C511B8DF12400CB1B88 /* AddressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4420C501B8DF12400CB1B88 /* AddressInfo.m */; };
 		D4420C531B8E257700CB1B88 /* add_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D4420C521B8E257700CB1B88 /* add_normal.png */; };
@@ -393,6 +394,7 @@
 		47EA44A21BE056DC00742CB9 /* XPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		47EA44A31BE056DC00742CB9 /* XPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPhotoView.h; sourceTree = "<group>"; };
 		47EA44A41BE056DC00742CB9 /* XPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPhotoView.m; sourceTree = "<group>"; };
+		8B0144DB1C40A61B00154559 /* shopping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shopping.gif; sourceTree = SOURCE_ROOT; };
 		D4420C4C1B8DE87200CB1B88 /* DBAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAddress.h; sourceTree = "<group>"; };
 		D4420C4D1B8DE87200CB1B88 /* DBAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAddress.m; sourceTree = "<group>"; };
 		D4420C4F1B8DF12400CB1B88 /* AddressInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressInfo.h; sourceTree = "<group>"; };
@@ -968,6 +970,7 @@
 		D4C62FA91B859DA900D7D59C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8B0144DB1C40A61B00154559 /* shopping.gif */,
 				D4C631671B8B426500D7D59C /* detailImg */,
 				D4C6308E1B88DC0D00D7D59C /* goodsImg */,
 				D4C6300E1B88659400D7D59C /* images */,
@@ -1686,6 +1689,7 @@
 				D4C632841B8B426500D7D59C /* 美妆护理4.3.jpg in Resources */,
 				D4C631621B8ADFD100D7D59C /* 营养保健3logo.jpg in Resources */,
 				D4C6320C1B8B426500D7D59C /* 家具家电6.3.jpg in Resources */,
+				8B0144DC1C40A61B00154559 /* shopping.gif in Resources */,
 				D4C6329B1B8B426500D7D59C /* 营养保健1.4.jpg in Resources */,
 				D4C630221B8867E000D7D59C /* tab_bg@2x.png in Resources */,
 				D4C632361B8B426500D7D59C /* 手机数码5.3.jpg in Resources */,
