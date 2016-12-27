@@ -13,7 +13,8 @@
 		47EA44A61BE056DC00742CB9 /* XPhotoBrowserBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EA44A01BE056DC00742CB9 /* XPhotoBrowserBar.m */; };
 		47EA44A71BE056DC00742CB9 /* XPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EA44A21BE056DC00742CB9 /* XPhotoBrowserViewController.m */; };
 		47EA44A81BE056DC00742CB9 /* XPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EA44A41BE056DC00742CB9 /* XPhotoView.m */; };
-		8B0144DC1C40A61B00154559 /* shopping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B0144DB1C40A61B00154559 /* shopping.gif */; settings = {ASSET_TAGS = (); }; };
+		8B0144DC1C40A61B00154559 /* shopping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B0144DB1C40A61B00154559 /* shopping.gif */; };
+		8BF2CCDF1E120E9000A12882 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF2CCDE1E120E9000A12882 /* libsqlite3.tbd */; };
 		D4420C4E1B8DE87200CB1B88 /* DBAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4420C4D1B8DE87200CB1B88 /* DBAddress.m */; };
 		D4420C511B8DF12400CB1B88 /* AddressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4420C501B8DF12400CB1B88 /* AddressInfo.m */; };
 		D4420C531B8E257700CB1B88 /* add_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D4420C521B8E257700CB1B88 /* add_normal.png */; };
@@ -44,7 +45,6 @@
 		D4C62FB71B859DA900D7D59C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C62FB61B859DA900D7D59C /* Images.xcassets */; };
 		D4C62FBA1B859DA900D7D59C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C62FB81B859DA900D7D59C /* LaunchScreen.xib */; };
 		D4C62FC61B859DAA00D7D59C /* SQLite____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C62FC51B859DAA00D7D59C /* SQLite____Tests.m */; };
-		D4C62FE51B8822BF00D7D59C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C62FE41B8822BF00D7D59C /* libsqlite3.dylib */; };
 		D4C62FF41B88648E00D7D59C /* MyFilePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C62FF21B88648E00D7D59C /* MyFilePlist.m */; };
 		D4C62FF81B8864BE00D7D59C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C62FF61B8864BE00D7D59C /* HomeViewController.m */; };
 		D4C62FF91B8864BE00D7D59C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C62FF71B8864BE00D7D59C /* HomeViewController.xib */; };
@@ -395,6 +395,7 @@
 		47EA44A31BE056DC00742CB9 /* XPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPhotoView.h; sourceTree = "<group>"; };
 		47EA44A41BE056DC00742CB9 /* XPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPhotoView.m; sourceTree = "<group>"; };
 		8B0144DB1C40A61B00154559 /* shopping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shopping.gif; sourceTree = SOURCE_ROOT; };
+		8BF2CCDE1E120E9000A12882 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D4420C4C1B8DE87200CB1B88 /* DBAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAddress.h; sourceTree = "<group>"; };
 		D4420C4D1B8DE87200CB1B88 /* DBAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAddress.m; sourceTree = "<group>"; };
 		D4420C4F1B8DF12400CB1B88 /* AddressInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressInfo.h; sourceTree = "<group>"; };
@@ -813,7 +814,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C62FE51B8822BF00D7D59C /* libsqlite3.dylib in Frameworks */,
+				8BF2CCDF1E120E9000A12882 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +843,14 @@
 			path = XPhotoBrowser;
 			sourceTree = "<group>";
 		};
+		8BF2CCDD1E120E9000A12882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF2CCDE1E120E9000A12882 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4C62F9D1B859DA900D7D59C = {
 			isa = PBXGroup;
 			children = (
@@ -850,6 +859,7 @@
 				D4C62FA81B859DA900D7D59C /* SQLite（购物） */,
 				D4C62FC21B859DAA00D7D59C /* SQLite（购物）Tests */,
 				D4C62FA71B859DA900D7D59C /* Products */,
+				8BF2CCDD1E120E9000A12882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1404,7 +1414,7 @@
 		D4C62F9E1B859DA900D7D59C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "蓝桥";
 				TargetAttributes = {
 					D4C62FA51B859DA900D7D59C = {
@@ -1873,14 +1883,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1896,7 +1909,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1916,8 +1929,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1933,7 +1948,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1946,11 +1961,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9EY44LM4YH;
 				INFOPLIST_FILE = "SQLite（购物）/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1960,11 +1978,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9EY44LM4YH;
 				INFOPLIST_FILE = "SQLite（购物）/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1982,6 +2003,7 @@
 				);
 				INFOPLIST_FILE = "SQLite（购物）Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQLite（购物）.app/SQLite（购物）";
 			};
@@ -1997,6 +2019,7 @@
 				);
 				INFOPLIST_FILE = "SQLite（购物）Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQLite（购物）.app/SQLite（购物）";
 			};
